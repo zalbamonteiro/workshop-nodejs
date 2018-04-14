@@ -46,3 +46,7 @@ Dentro da pasta views do nosso projeto, crie um arquivo chamado index.ejs e dent
 </html>
 ```
 
+Reinicie o nodemon e veja já sua aplicação com sua engine de visualização. 
+
+Aeeeeee... vocês está indo muito bem!!! &lt;3
+
