@@ -48,7 +48,7 @@ Estamos avançando muito bem, mas para montarmos nossa banda, iremos precisar mu
 Para agilizar o nosso passo a passo,  vamos ver comentários especificando algumas linhas de código, assim vocês poderá entender os que os comandos significam.
 {% endhint %}
 
-No arquivo jsband, substitua o nosso "Olá mundo" pelo código abaixo.
+No arquivo jsband, substitua o nosso "Olá mundo" pelo código abaixo. 
 
 ```text
 var http = require('http');         // http é uma biblioteca disponível no nodejs
@@ -57,5 +57,27 @@ server.listen(3000);                // a porta do nosso servidor local rodaremos
 console.log("servidor ta rodando")  // sinalizamos que o servidor esta rodando
 ```
 
+Abra em sei navegador o servidor local na porta 3000:
 
+```text
+http://localhost:3000/
+```
+
+### Opah, mas no carregou nada no meu localhost:3000 :\(
+
+Se vocês tentar abrir em seu navegador o seu servidor local na porta 3000, conforme indicamos no nosso código, não vai conseguir visualizar nenhuma página, mas tudo bem agora nós vamos resolver isso.
+
+Nós não conseguimos visualizar nada acessando o endereço, porque quando usamos o método createServer\(\) uma função anônima que recebe dois parâmetros, um de requisição e um de resposta.
+
+```text
+var http = require('http');
+var server = http.createServer(function(req,res){
+    // req é o parâmetro de requisição e res o de resposta, res.end informa onde a resposta 
+    // deve ser exibida, nesse caso estamos mandando a resposta do servidor para tags html
+    res.end("<html><body><h1>Listando os produtos</h1></body></html>"); 
+});
+server.listen(3000);
+
+console.log("servidor ta rodando");
+```
 
