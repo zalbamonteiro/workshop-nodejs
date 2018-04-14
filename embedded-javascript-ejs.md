@@ -103,12 +103,12 @@ var express = require('express');
 var app = express();
 app.set('view engine','ejs');
 
-app.get('/jsband',function(req,res){
+app.get('/my-api',function(req,res){
     res.render("index")     
 });
 
-app.get('/jsband/teclado',function(req,res){
-    res.render("teclado"); // nova rota e nova template que tem os includes    
+app.get('/my-api/teclado',function(req,res){
+    res.render("restaurantes"); // nova rota e nova template que tem os includes    
 });
 app.listen(3000,function(){
     console.log("servidor rodando");
