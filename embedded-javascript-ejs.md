@@ -28,5 +28,21 @@ app.listen(3000,function(){
 });
 ```
 
+{% hint style="info" %}
+Importante: por padrão o nodejs sempre irá procurar um diretório chamado views dentro do diretório raiz da aplicação, então para tudo funcionar bem, crie uma pasta chamada views dentro da pasta jsband
+{% endhint %}
 
+Dentro da pasta views do nosso projeto, crie um arquivo chamado index.ejs e dentro dele coloque o html abaixo:
+
+```text
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jsband</title>
+    </head>
+    <body>
+        <h2>Bem vindo ao jsband!</h2>
+    </body>
+</html>
+```
 
