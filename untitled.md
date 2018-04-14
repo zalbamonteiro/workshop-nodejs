@@ -22,7 +22,7 @@ Se você é um usuário linux, talvez você tenha dificuldades no teste para des
 sudo apt-get install nodejs-legacy
 ```
 
-Se vocês conseguir visualizar a versão odo node instalado em seu computador, é um sinal que estamos no caminho certo. Caso tenha alguma dificuldade, por favor peça auxilio ;\)
+Se vocês conseguir visualizar a versão odo node instalado em seu computador, é um sinal que estamos no caminho certo. Caso tenha alguma dificuldade, por favor peça auxilio =\)
 
 
 
