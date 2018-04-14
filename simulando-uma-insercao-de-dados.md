@@ -51,3 +51,20 @@ restaurante.insert = function(request, response) {
 };
 ```
 
+Você deve estar se perguntando, como vou enviar os dados para simular na minha aplicação?? Tudo bem, nada de pânico vamos aprender a usar uma ferramenta nova, que vai nos ajudar na vidaaaaa!! Essa ferramenta é o postman. Para facilitar vocês pode instalar o postaman com um extenção no google chrome para testar nossas requisições.
+
+### Ok, mas o que é postman?
+
+O **Postman** é uma extensão do Google Chrome muito útil para realizar testes de suas aplicações http.
+
+Agora que já instalamos o postaman vamos fazer uma simulação de inserção de dados. no postaman envie os dados em formato de json no body como o indicado abaixo:
+
+```text
+{ "id": "4", "name":"teste"    , "tipo": "normal"}
+```
+
+{% hint style="info" %}
+não esqueça que você deve informar o url \(sua nova rota\), do seu metodo de inserção.  
+http://localhost:3000/my-api/restaurantes
+{% endhint %}
+
