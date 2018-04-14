@@ -18,7 +18,7 @@ Depois de criada, entre no diretório jsband.
 $ cd my-api/
 ```
 
-### Criando o arquivo jsband
+### Criando o arquivo my-api
 
 No seu editor de texto favorito crie um arquivo javascript chamado "my-api.js", dentro dele vamos rodar um comando básico de console, só para podermos visualizar o seu funcionamento. Insira dentro desse arquivo os seguintes comandos:
 
