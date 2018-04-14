@@ -57,7 +57,7 @@ server.listen(3000);                // a porta do nosso servidor local rodaremos
 console.log("servidor ta rodando")  // sinalizamos que o servidor esta rodando
 ```
 
-Abra em sei navegador o servidor local na porta 3000:
+Abra em seu navegador o servidor local na porta 3000:
 
 ```text
 http://localhost:3000/
@@ -79,4 +79,12 @@ var server = http.createServer(function(req,res){
 server.listen(3000);
 console.log("servidor ta rodando");
 ```
+
+{% hint style="info" %}
+Uma coisa importante, toda a vez que o arquivo for modificado, vocês deverá reiniciar o servidor, então salve suas alterações e rode novamente node jsband.js no seu terminal
+{% endhint %}
+
+Agora vamos ao teste, abra novamente o servidor local na porta 3000
+
+Tcharaaaaammm... Temos nosso servidor e um "Olá mundo" em grande estilo!! \o/\o/
 
