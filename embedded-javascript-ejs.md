@@ -10,14 +10,14 @@ O [EJS ](http://ejs.co/)é uma engine de visualização, com ele conseguimos de 
 $ npm install ejs --save
 ```
 
-Rodei o nodemon novamente, já que paramos ele para instalar o EJS, e pronto, podemos já utilizar a nossa engine view. Mas antes de montarmos nosso html vamos olhar algumas modificações no nosso arquivo jsband.
+Rodei o nodemon novamente, já que paramos ele para instalar o EJS, e pronto, podemos já utilizar a nossa engine view. Mas antes de montarmos nosso html vamos olhar algumas modificações no nosso arquivo my-api.
 
 ```text
 var express = require('express');
 var app = express();
 app.set('view engine','ejs'); // setando minha engine de visualizacao
 
-app.get('/jsband',function(req,res){
+app.get('/my-api',function(req,res){
     res.render("index") 
     // Anteriormente usavamos o send junto com as tags html através do send
     // agora não queremos mais enviar algo "tags" como resposta e sim renderizar
@@ -29,7 +29,7 @@ app.listen(3000,function(){
 ```
 
 {% hint style="info" %}
-Importante: por padrão o nodejs sempre irá procurar um diretório chamado views dentro do diretório raiz da aplicação, então para tudo funcionar bem, crie uma pasta chamada views dentro da pasta jsband
+Importante: por padrão o nodejs sempre irá procurar um diretório chamado views dentro do diretório raiz da aplicação, então para tudo funcionar bem, crie uma pasta chamada views dentro da pasta my-api
 {% endhint %}
 
 Dentro da pasta views do nosso projeto, crie um arquivo chamado index.ejs e dentro dele coloque o html abaixo:
@@ -38,7 +38,7 @@ Dentro da pasta views do nosso projeto, crie um arquivo chamado index.ejs e dent
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Jsband</title>
+        <title>My-api</title>
     </head>
     <body>
         <h2>Bem vindo ao jsband!</h2>
