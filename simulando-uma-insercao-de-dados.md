@@ -68,3 +68,9 @@ não esqueça que você deve informar o url \(sua nova rota\), do seu metodo de 
 http://localhost:3000/my-api/restaurantes
 {% endhint %}
 
+Seu resultado deve ser parecido com isso.
+
+
+
+![](.gitbook/assets/image%20%289%29.png)
+
