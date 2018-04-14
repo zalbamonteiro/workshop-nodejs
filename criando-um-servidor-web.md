@@ -9,18 +9,18 @@ Para darmos inicio ao nosso projeto precisamos criar um diretório onde colocare
 A sua área de trabalho cria a pasta jsband
 
 ```
-$ mkdir jsband
+$ mkdir my-api
 ```
 
 Depois de criada, entre no diretório jsband.
 
 ```text
-$ cd jsband/
+$ cd my-api/
 ```
 
 ### Criando o arquivo jsband
 
-No seu editor de texto favorito crie um arquivo javascript chamado "jsband.js", dentro dele vamos rodar um comendo básico de console, só para podermos visualizar o seu funcionamento. Insira dentro desse arquivo os seguintes comandos:
+No seu editor de texto favorito crie um arquivo javascript chamado "myapi.js", dentro dele vamos rodar um comendo básico de console, só para podermos visualizar o seu funcionamento. Insira dentro desse arquivo os seguintes comandos:
 
 ```text
 console.log("Olá mundo!");
