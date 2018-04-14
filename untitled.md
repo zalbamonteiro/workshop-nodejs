@@ -1,6 +1,6 @@
 # Instalando nodejs
 
-### O que é nodejs?
+### O que é Node.js? {#o-que-e-node.js}
 
 [Node.js](http://www.nodejs.org/) é uma plataforma para desenvolvimento de aplicações _server-side_ baseadas em rede utilizando **JavaScript** e o **V8 JavaScript Engine**, ou seja, com **Node.js** podemos criar uma variedade de aplicações _Web_ utilizando apenas código em **JavaScript**.
 
