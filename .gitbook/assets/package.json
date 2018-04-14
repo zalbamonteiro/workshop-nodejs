@@ -1,0 +1,11 @@
+{
+  "name": "jsband",
+  "version": "1.0.0",
+  "description": "arquivo de configuracao jsband",
+  "main": "jsband.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Zalba Monteiro",
+  "license": "ISC"
+}
