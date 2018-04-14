@@ -92,3 +92,7 @@ Crie um arquivo no diretório view chamado "teclado.ejs" e insira o seguinte có
 <% include include/footer %> <!-- aqui é a marcação onde faz o include do footer -->
 ```
 
+{% hint style="info" %}
+note que dessa vez para inserir comentários usamos &lt;!-- --&gt; que é como inserimos comentários em html.
+{% endhint %}
+
