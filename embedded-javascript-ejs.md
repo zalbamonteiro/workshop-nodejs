@@ -85,10 +85,10 @@ Para testar nossos includes vamos criar uma nova página que será o nosso tecla
 Crie um arquivo no diretório view chamado "teclado.ejs" e insira o seguinte código.
 
 ```text
-<% include include/head %> // aqui é a marcação onde faz o include do head
+<% include include/head %> <!-- aqui é a marcação onde faz o include do head -->
 <div>
     <h2>Teclado</h2>
 <div>
-<% include include/footer %> // aqui é a marcação onde faz o include do footer
+<% include include/footer %> <!-- aqui é a marcação onde faz o include do footer -->
 ```
 
