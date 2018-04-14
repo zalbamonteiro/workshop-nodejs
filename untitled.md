@@ -1,8 +1,8 @@
 # Instalando nodejs
 
-O que é Node.js?
+### O que é nodejs?
 
-Becoming a super hero is a fairly straight forward process:
+[Node.js](http://www.nodejs.org/) é uma plataforma para desenvolvimento de aplicações _server-side_ baseadas em rede utilizando **JavaScript** e o **V8 JavaScript Engine**, ou seja, com **Node.js** podemos criar uma variedade de aplicações _Web_ utilizando apenas código em **JavaScript**.
 
 ```
 $ give me super-powers
