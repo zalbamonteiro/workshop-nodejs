@@ -15,15 +15,14 @@ $ node -v
 ```
 
 {% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+Se você é um usuário linux, talvez você tenha dificuldades no teste para descobrir a versão do node instalado, isso é porque o comando node pode não ser reconhecido sem a instalação no nodejs-legacy . Para solucionar isso instale também esse pacote com:
 {% endhint %}
 
-Once you're strong enough, save the world:
+```text
+sudo apt-get install nodejs-legacy
+```
 
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
+
 
 
 
