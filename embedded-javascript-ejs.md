@@ -78,7 +78,7 @@ O diretório include deverá se parecer com esse aqui.
 
 
 
-![](.gitbook/assets/image%20%286%29.png)
+![](.gitbook/assets/image%20%287%29.png)
 
 Para testar nossos includes vamos criar uma nova página que será a nossa consulta direta do banco. Nossa API será um catálogo de restaurantes. Logo vamos dar o nome do arquivo de restaurantes.js
 
@@ -107,7 +107,7 @@ app.get('/my-api',function(req,res){
     res.render("index")     
 });
 
-app.get('/my-api/teclado',function(req,res){
+app.get('/my-api/restaurantes',function(req,res){
     res.render("restaurantes"); // nova rota e nova template que tem os includes    
 });
 app.listen(3000,function(){
@@ -119,5 +119,5 @@ O resultado deve ser algo parecido com esse:
 
 
 
-![](.gitbook/assets/image%20%282%29.png)
+![](.gitbook/assets/image%20%281%29.png)
 
