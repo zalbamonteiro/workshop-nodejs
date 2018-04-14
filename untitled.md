@@ -15,7 +15,7 @@ $ node -v
 ```
 
 {% hint style="info" %}
-Se você é um usuário linux, talvez você tenha dificuldades no teste para descobrir a versão do node instalado, isso é porque o comando node pode não ser reconhecido sem a instalação no nodejs-legacy . Para solucionar isso instale também esse pacote com:
+Se você é um usuário linux, talvez você tenha dificuldades no teste para descobrir a versão do node instalado, isso é porque o comando node pode não ser reconhecido sem a instalação no nodejs-legacy . Para solucionar esse problema instale também esse pacote com:
 {% endhint %}
 
 ```text
