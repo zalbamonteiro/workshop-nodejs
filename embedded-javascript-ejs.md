@@ -16,7 +16,10 @@ Rodei o nodemon novamente, já que paramos ele para instalar o EJS, e pronto, po
 var express = require('express');
 var app = express();
 app.get('/produtos',function(req,res){
-    res.render("jsband")
+    res.render("jsband") 
+    // Anteriormente usavamos o send junto com as tags html através do send
+    // agora não queremos mais enviar algo "tags" como resposta e sim renderizar
+    // uma resposta, é por isso que usamos o render
 });
 app.listen(3000,function(){
     console.log("servidor rodando");
