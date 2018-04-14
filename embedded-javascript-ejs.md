@@ -115,3 +115,9 @@ app.listen(3000,function(){
 });
 ```
 
+O resultado deve ser algo parecido com esse:
+
+
+
+![](.gitbook/assets/image%20%283%29.png)
+
