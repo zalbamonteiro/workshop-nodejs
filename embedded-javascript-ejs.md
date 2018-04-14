@@ -15,6 +15,8 @@ Rodei o nodemon novamente, já que paramos ele para instalar o EJS, e pronto, po
 ```text
 var express = require('express');
 var app = express();
+app.set('view engine','ejs'); // setando minha engine de visualizacao
+
 app.get('/jsband',function(req,res){
     res.render("views/index") 
     // Anteriormente usavamos o send junto com as tags html através do send
