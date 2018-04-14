@@ -29,7 +29,7 @@ console.log("Olá mundo!");
 Salve esse arquivo dentro do diretório que criamos na área de trabalho, vá até o terminal e execute o seguinte comando:
 
 ```text
-node jsband.js
+node myapi.js
 ```
 
 Feito isso, dentro do terminal onde você executou o comando deverá aparecer o que escrevemos dentro do nosso comando de console. O nosso queridíssimo "Olá mundo!". 
