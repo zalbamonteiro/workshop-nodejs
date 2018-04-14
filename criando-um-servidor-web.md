@@ -18,5 +18,11 @@ Depois de criada, entre no diretório jsband.
 $ cd jsband/
 ```
 
-### 
+### Criando o arquivo jsband
+
+No seu editor de texto favorito crie um arquivo javascript chamado "jsband.js", dentro dele vamos rodar um comendo básico de console, só para podermos visualizar o seu funcionamento. Insira dentro desse arquivo os seguintes comandos:
+
+```text
+console.log("listagem de produtos");
+```
 
