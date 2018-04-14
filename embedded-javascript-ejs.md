@@ -96,3 +96,22 @@ Crie um arquivo no diretório view chamado "teclado.ejs" e insira o seguinte có
 note que dessa vez para inserir comentários usamos &lt;!-- --&gt; que é como inserimos comentários em html.
 {% endhint %}
 
+Para finalizar a ver nosso resultado da página do teclado, temos que ir no arquivo jsband.js, criar uma nova rota e indicar o template que desejamos renderizar.
+
+```text
+var express = require('express');
+var app = express();
+app.set('view engine','ejs');
+
+app.get('/jsband',function(req,res){
+    res.render("index")     
+});
+
+app.get('/jsband/teclado',function(req,res){
+    res.render("teclado"); // nova rota e nova template que tem os includes    
+});
+app.listen(3000,function(){
+    console.log("servidor rodando");
+});
+```
+
