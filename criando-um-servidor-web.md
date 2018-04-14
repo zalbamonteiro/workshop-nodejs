@@ -40,5 +40,20 @@ Estamos indo muito bem, em breve nosso projeto começará a tomar forma. \o/
 Basicamente o que ocorreu nessa primeira etapa é acabamos de fazer a execução do nosso javascript pelo nodejs.
 {% endhint %}
 
+### Olha o servidor aí genteeeeee!!
+
+Estamos avançando muito bem, mas para montarmos nossa banda, iremos precisar muitooooo e um servidor. Então vamos cria ele para podermos trabalhar.
+
+{% hint style="info" %}
+Para agilizar o nosso passo a passo,  vamos ver comentários especificando algumas linhas de código, assim vocês poderá entender os que os comandos significam.
+{% endhint %}
+
+```text
+var http = require('http'); // http é uma biblioteca disponível no nodejs
+var server = http.createServer(); // estamos criando um servidor
+server.listen(3000); // a porta do nosso servidor local rodaremos a aplicação
+console.log("servidor ta rodando") // sinalizamos que o servidor esta rodando
+```
+
 
 
