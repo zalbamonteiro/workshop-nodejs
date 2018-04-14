@@ -6,6 +6,5 @@
 * [Nodemon](nodemon.md)
 * [Express, e vamos as rotas](express-e-vamos-as-rotas.md)
 * [Embedded JavaScript - Ejs](embedded-javascript-ejs.md)
-* [Css nosso de cada dia e o BEM](css-nosso-de-cada-dia-e-o-bem.md)
 * [Carregando dados do json](carregando-dados-do-json.md)
 
