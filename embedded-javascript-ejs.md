@@ -18,7 +18,7 @@ var app = express();
 app.set('view engine','ejs'); // setando minha engine de visualizacao
 
 app.get('/jsband',function(req,res){
-    res.render("views/index") 
+    res.render("index") 
     // Anteriormente usavamos o send junto com as tags html através do send
     // agora não queremos mais enviar algo "tags" como resposta e sim renderizar
     // uma resposta, é por isso que usamos o render
