@@ -6,8 +6,12 @@
 
 ### Instalando o Node.js
 
+A instalação do Node.js é extremamente simples graças ao fato de o V8 JavaScript Engine ser completamente multi-plataforma, tudo que você precisa fazer é visitar a página oficial do Node.js, clicar em “INSTALL” e seguir as instruções referentes ao seu sistema operacional.
+
+Para testar se a instalação foi concluída com sucesso basta digitar no seu terminal:
+
 ```
-$ give me super-powers
+$ node -v
 ```
 
 {% hint style="info" %}
