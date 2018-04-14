@@ -80,5 +80,15 @@ O diretório include deverá se parecer com esse aqui.
 
 ![](.gitbook/assets/image%20%282%29.png)
 
+Para testar nossos includes vamos criar uma nova página que será o nosso teclado. Você não imaginou que uma banda poderia fazer sucessos sem um teclado não é?! Vamos criar o teclado.ejs
 
+Crie um arquivo no diretório view chamado "teclado.ejs" e insira o seguinte código.
+
+```text
+<% include include/head %> // aqui é a marcação onde faz o include do head
+<div>
+    <h2>Teclado</h2>
+<div>
+<% include include/footer %> // aqui é a marcação onde faz o include do footer
+```
 
