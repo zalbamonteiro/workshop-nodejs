@@ -49,10 +49,10 @@ Para agilizar o nosso passo a passo,  vamos ver comentários especificando algum
 {% endhint %}
 
 ```text
-var http = require('http'); // http é uma biblioteca disponível no nodejs
-var server = http.createServer(); // estamos criando um servidor
-server.listen(3000); // a porta do nosso servidor local rodaremos a aplicação
-console.log("servidor ta rodando") // sinalizamos que o servidor esta rodando
+var http = require('http');         // http é uma biblioteca disponível no nodejs
+var server = http.createServer();   // estamos criando um servidor
+server.listen(3000);                // a porta do nosso servidor local rodaremos a aplicação
+console.log("servidor ta rodando")  // sinalizamos que o servidor esta rodando
 ```
 
 
