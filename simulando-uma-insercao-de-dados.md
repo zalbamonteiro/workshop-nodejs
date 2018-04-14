@@ -6,21 +6,7 @@ Como nós não vamos utilizar um banco de dados no nosso workshop, não vamos fa
 
 No arquivo my-api.js, vamos inserir um nova funcionalidade, utilizaremos a mesma rota já criada mas utilizaremos um outros método na mesma rota e aí nossa aplicação fica muito mais legal.
 
-Então no my-api.js adicione.
-
-```
-$ restaurante.insert = function(request, response) {		
-	dados.restaurantes.push(request.body);
-	// aqui estamos utilizando o request para receber os dados enviados.
-	response.render('restaurantes', {result: dados});
-};
-```
-
-{% hint style="info" %}
- request é o que usamos para receber requisições enviadas pelo cliente, nesse caso usamos o request.body, então para isso vamos ter que instalar esse recurso.
-{% endhint %}
-
-No seu terminal instale o body-parser com o comando
+Vamos precisar de uma nova funcionalidade que vai nos auxiliar a lidar com nosso request, que vão ser as requisições dos dados, esse recurso é o body-parser. No seu terminal instale o body-parser com o comando
 
 ```text
 npm install body-parser --save
@@ -52,5 +38,16 @@ app.listen(3000,function(){
 });
 ```
 
+### Chegou a hora de criar o método
 
+Conforme já fizemos antes com os métodos de listagem e de detalhe, criando funcionalidades no nosso controller, vamos criar um para simular nossa inserção.
+
+No controller restaurantes.js insira o código.
+
+```text
+restaurante.insert = function(request, response) {		
+	dados.restaurantes.push(request.body); // aquiestamos usanro o request para receber nossas requisições 
+	response.render('restaurantes', {result: dados});
+};
+```
 
