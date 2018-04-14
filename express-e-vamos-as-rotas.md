@@ -30,7 +30,22 @@ sendo que o --save indica que essa dependência será adicionada as configuraç�
 Para saber mais sobre você pode ler em: [https://docs.npmjs.com/files/package.json](https://docs.npmjs.com/files/package.json)
 {% endhint %}
 
-Se você quiser um arquivo package.json exatamente igual ao do tutorial, você pode baixa-lo pelo link:
+Se você quiser um arquivo package.json exatamente igual ao do tutorial, pode copiar os dados do package.json abaixo e salvar no seu projeto.
+
+```text
+{
+  "name": "jsband",
+  "version": "1.0.0",
+  "description": "arquivo de configuracao jsband",
+  "main": "jsband.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Zalba Monteiro",
+  "license": "ISC"
+}
+
+```
 
 
 
