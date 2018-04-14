@@ -50,3 +50,22 @@ Reinicie o nodemon e veja já sua aplicação com sua engine de visualização.
 
 Aeeeeee... vocês está indo muito bem!!! &lt;3
 
+### Vamos isolar head e footer
+
+Para podermos reaproveitar ao máximo nosso html, vamos isolar o nosso head e nosso footer, assim vamos criar múltiplas páginas de forma mais rápida e otimizada. Mão na massa.
+
+### Vamos criar o head
+
+Primeiro crie uma pasta chamada include onde guardaremos todas as partes dos nossos templates que vamos reutilizar no nosso projeto. Depois de criar esse diretório crie um novo arquivo de nome "head.ejs" e insira o seguinte código
+
+```text
+<!DOCTYPE html>
+	<html>
+		<head>
+		    <title>Jsband</title>
+		</head>
+		<body>
+```
+
+
+
