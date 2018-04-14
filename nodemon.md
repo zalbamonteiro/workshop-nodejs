@@ -14,5 +14,11 @@ $ npm install -g nodemon
 
 Pronto! Agora você pode alterar seus arquivos que o nodemon vai restartar o nosso servidor.
 
+Para usarmos o nodemon para subir o nosso servidor, basta no terminal digitarmos o comando:
+
+```text
+nodemon jsband
+```
+
 
 
