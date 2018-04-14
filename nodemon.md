@@ -20,5 +20,5 @@ Para usarmos o nodemon para subir o nosso servidor, basta no terminal digitarmos
 nodemon my-api
 ```
 
-![](.gitbook/assets/image%20%284%29.png)
+![](.gitbook/assets/image.png)
 

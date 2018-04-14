@@ -62,7 +62,7 @@ Primeiro crie uma pasta chamada include onde guardaremos todas as partes dos nos
 <!DOCTYPE html>
 	<html>
 		<head>
-		    <title>Jsband</title>
+		    <title>My-api</title>
 		</head>
 		<body>
 ```
@@ -78,16 +78,16 @@ O diretório include deverá se parecer com esse aqui.
 
 
 
-![](.gitbook/assets/image%20%282%29.png)
+![](.gitbook/assets/image%20%286%29.png)
 
-Para testar nossos includes vamos criar uma nova página que será o nosso teclado. Você não imaginou que uma banda poderia fazer sucessos sem um teclado não é?! Vamos criar o teclado.ejs
+Para testar nossos includes vamos criar uma nova página que será a nossa consulta direta do banco. Nossa API será um catálogo de restaurantes. Logo vamos dar o nome do arquivo de restaurantes.js
 
-Crie um arquivo no diretório view chamado "teclado.ejs" e insira o seguinte código.
+Crie um arquivo no diretório view chamado "restaurantes.ejs" e insira o seguinte código.
 
 ```text
 <% include include/head %> <!-- aqui é a marcação onde faz o include do head -->
 <div>
-    <h2>Teclado</h2>
+    <h2>Todos os restaurantes</h2>
 <div>
 <% include include/footer %> <!-- aqui é a marcação onde faz o include do footer -->
 ```
@@ -119,5 +119,5 @@ O resultado deve ser algo parecido com esse:
 
 
 
-![](.gitbook/assets/image%20%283%29.png)
+![](.gitbook/assets/image%20%282%29.png)
 
