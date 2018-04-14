@@ -1,6 +1,6 @@
-# workshop nodejs
+# Instalando nodejs
 
-## Getting Super Powers
+O que é Node.js?
 
 Becoming a super hero is a fairly straight forward process:
 
