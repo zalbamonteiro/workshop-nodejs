@@ -78,7 +78,7 @@ O diretório include deverá se parecer com esse aqui.
 
 
 
-![](.gitbook/assets/image%20%287%29.png)
+![](.gitbook/assets/image%20%288%29.png)
 
 Para testar nossos includes vamos criar uma nova página que será a nossa consulta direta do banco. Nossa API será um catálogo de restaurantes. Logo vamos dar o nome do arquivo de restaurantes.js
 

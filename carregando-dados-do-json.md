@@ -46,5 +46,28 @@ module.exports  = restaurante; // aqui nos exportamos os dados de node, pois o f
 //modularização que a plataforma do ode adota é o commonjs
 ```
 
+E por ultimo depois de criarmos nosso arquivos de json, controller, e fazer a função que vai pegar os dados do json, tratar na controller e enviar para a view, temos que informar tudo isso na nossa routes.
 
+```text
+var express = require('express');
+var app = express();
+const restaurante = require('./controllers/restaurantes');  // importo meu controller
+// e crio um variável para poder usa-la ns minhas rotas
+app.set('view engine','ejs');
+app.get('/my-api',function(req,res){
+    res.render("index")     
+});
+
+app.get('/my-api/restaurantes', restaurante.listAll); // passo o método que criei na minha controller
+// para facilitar a organiação da minha aplicação
+app.listen(3000,function(){
+    console.log("servidor rodando");
+});
+```
+
+Ao terminar todos esse passo seu resoltado será mais ou menos assim:
+
+
+
+![](.gitbook/assets/image%20%286%29.png)
 
