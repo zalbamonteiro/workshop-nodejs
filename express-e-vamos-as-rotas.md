@@ -76,3 +76,7 @@ Agora acesso o endereço do servidor local, mas lembre-se que adicionamos uma ro
 http://localhost:3000/jsband
 ```
 
+
+
+![](.gitbook/assets/image%20%281%29.png)
+
