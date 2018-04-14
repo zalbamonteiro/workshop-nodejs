@@ -1,4 +1,4 @@
-# Instalação de node
+# workshop nodejs
 
 ### O que é Node.js? {#o-que-é-node-js}
 
