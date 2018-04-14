@@ -4,7 +4,7 @@
 
 Sempre que formos trabalhar em um projeto com vários páginas ou serviços, vamos recorrer ao uso de rotas, rotas são endereços e/ou URLs diferentes que servem para identificarmos várias páginas ou funcionalidades da nossa aplicação.
 
-Podemos criar nossas rotas utilizando a biblioteca http, mas como queremos uma banda de sucesso, precisamos usar todos os recursos para que o jsband seja uma estrela. Vamos então conhecer um pouco de express.
+Podemos criar nossas rotas utilizando a biblioteca http, mas como queremos uma api de sucesso, precisamos usar todos os recursos para que a my-api seja uma estrela. Vamos então conhecer um pouco de express.
 
  Express, que é uma biblioteca JavaScript construída sobre o módulo HTTP do Node.js, e nos fornece uma maneira mais simples de lidar com as requisições. Então bora instalar o express no nosso jsband.
 
@@ -16,7 +16,7 @@ Package.json é uma arquivo de configuração da nossa aplicação, nele estarã
 
 ### Criando um package.json do inicio
 
-Para criar um package.json do inicio, basta que dentro do diretório jsband, no terminal vocês pare o servidor com `Ctrl+c` e digite o comando `npm init`. Isso irá gerar uma série de perguntas de configuração para ao final criar uma arquivo package.json.
+Para criar um package.json do inicio, basta que dentro do diretório my-api, no terminal vocês pare o servidor com `Ctrl+c` e digite o comando `npm init`. Isso irá gerar uma série de perguntas de configuração para ao final criar uma arquivo package.json.
 
 Criamos o package.json, agora vamos ao que nos interessa, vamos adicionar o nosso queridinho Express. No seu terminal execute os comandos.
 
@@ -24,7 +24,7 @@ Criamos o package.json, agora vamos ao que nos interessa, vamos adicionar o noss
 $ npm install express --save
 ```
 
-sendo que o --save indica que essa dependência será adicionada as configurações do package.json, assim a proxima pessoa que copiar sua aplicação, só precisará executar o arquivo de configuração para baixar também o express.
+sendo que o --save indica que essa dependência será adicionada as configurações do package.json, assim a próxima pessoa que copiar sua aplicação, só precisará executar o arquivo de configuração para baixar também o express.
 
 {% hint style="info" %}
 Para saber mais sobre você pode ler em: [https://docs.npmjs.com/files/package.json](https://docs.npmjs.com/files/package.json)
@@ -34,10 +34,10 @@ Se você quiser um arquivo package.json exatamente igual ao do tutorial, pode co
 
 ```text
 {
-  "name": "jsband",
+  "name": "my-api",
   "version": "1.0.0",
-  "description": "arquivo de configuracao jsband",
-  "main": "jsband.js",
+  "description": "arquivo de configuracao my-api",
+  "main": "my-api.js",
   "scripts": {
     "test": "test"
   },
@@ -56,10 +56,10 @@ Agora que já temos o express instalado, e nosso arquivo package.json, podemos c
 ```text
 var express = require('express'); // vamos trocaro http pelo uso do express
 var app = express();
-app.get('/jsband', function(req,res){ 
+app.get('/my-api', function(req,res){ 
   // estamos usando o metodo get e criando um rota para nossa aplicação
   // depois disso informamos como postramos a resposta da nossa requisicao
-  res.send("<html><body><h1>Bem vindo ao jsband!!</h1></body></html>");
+  res.send("<html><body><h1>Bem vindo ao my-api!!</h1></body></html>");
 });
 app.listen(3000,function(){
     console.log("servidor rodando");
@@ -73,10 +73,10 @@ Lembre-se que para instalar o express nos paramos o servidor, rode o nodemon nov
 Agora acesso o endereço do servidor local, mas lembre-se que adicionamos uma rota agora, então nossa url também mudou. Acesse: 
 
 ```text
-http://localhost:3000/jsband
+http://localhost:3000/my-api
 ```
 
 
 
-![](.gitbook/assets/image%20%281%29.png)
+![](.gitbook/assets/image%20%285%29.png)
 
