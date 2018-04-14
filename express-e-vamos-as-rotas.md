@@ -42,9 +42,11 @@ Se você quiser um arquivo package.json exatamente igual ao do tutorial, pode co
     "test": "test"
   },
   "author": "Zalba Monteiro",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
-
 ```
 
 
