@@ -66,5 +66,13 @@ app.listen(3000,function(){
 });
 ```
 
+{% hint style="info" %}
+Lembre-se que para instalar o express nos paramos o servidor, rode o nodemon novamente para restartar o servidor.
+{% endhint %}
 
+Agora acesso o endereço do servidor local, mas lembre-se que adicionamos uma rota agora, então nossa url também mudou. Acesse: 
+
+```text
+http://localhost:3000/jsband
+```
 
