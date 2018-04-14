@@ -15,8 +15,8 @@ Rodei o nodemon novamente, já que paramos ele para instalar o EJS, e pronto, po
 ```text
 var express = require('express');
 var app = express();
-app.get('/produtos',function(req,res){
-    res.render("jsband") 
+app.get('/jsband',function(req,res){
+    res.render("views/index") 
     // Anteriormente usavamos o send junto com as tags html através do send
     // agora não queremos mais enviar algo "tags" como resposta e sim renderizar
     // uma resposta, é por isso que usamos o render
