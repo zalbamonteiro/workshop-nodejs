@@ -1,4 +1,4 @@
-# Instalando nodejs
+# Conhecendo um pouco nodejs
 
 ### O que é Node.js? {#o-que-e-node.js}
 
