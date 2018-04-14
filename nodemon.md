@@ -17,10 +17,8 @@ Pronto! Agora você pode alterar seus arquivos que o nodemon vai restartar o nos
 Para usarmos o nodemon para subir o nosso servidor, basta no terminal digitarmos o comando:
 
 ```text
-nodemon jsband
+nodemon my-api
 ```
 
-
-
-![](.gitbook/assets/image.png)
+![](.gitbook/assets/image%20%284%29.png)
 
