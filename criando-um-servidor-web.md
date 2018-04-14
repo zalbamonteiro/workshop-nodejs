@@ -48,6 +48,8 @@ Estamos avançando muito bem, mas para montarmos nossa banda, iremos precisar mu
 Para agilizar o nosso passo a passo,  vamos ver comentários especificando algumas linhas de código, assim vocês poderá entender os que os comandos significam.
 {% endhint %}
 
+No arquivo jsband, substitua o nosso "Olá mundo" pelo código abaixo.
+
 ```text
 var http = require('http');         // http é uma biblioteca disponível no nodejs
 var server = http.createServer();   // estamos criando um servidor
