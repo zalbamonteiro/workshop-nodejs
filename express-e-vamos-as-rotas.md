@@ -49,5 +49,22 @@ Se você quiser um arquivo package.json exatamente igual ao do tutorial, pode co
 }
 ```
 
+### Minha primeira rota
+
+Agora que já temos o express instalado, e nosso arquivo package.json, podemos começar a usar o express e criar nossas rotas.
+
+```text
+var express = require('express'); // vamos trocaro http pelo uso do express
+var app = express();
+app.get('/jsband', function(req,res){ 
+  // estamos usando o metodo get e criando um rota para nossa aplicação
+  // depois disso informamos como postramos a resposta da nossa requisicao
+  res.send("<html><body><h1>Bem vindo ao jsband!!</h1></body></html>");
+});
+app.listen(3000,function(){
+    console.log("servidor rodando");
+});
+```
+
 
 
