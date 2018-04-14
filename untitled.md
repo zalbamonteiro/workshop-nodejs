@@ -4,6 +4,8 @@
 
 [Node.js](http://www.nodejs.org/) é uma plataforma para desenvolvimento de aplicações _server-side_ baseadas em rede utilizando **JavaScript** e o **V8 JavaScript Engine**, ou seja, com **Node.js** podemos criar uma variedade de aplicações _Web_ utilizando apenas código em **JavaScript**.
 
+### Instalando o Node.js
+
 ```
 $ give me super-powers
 ```
