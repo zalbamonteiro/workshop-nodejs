@@ -20,7 +20,7 @@ $ cd my-api/
 
 ### Criando o arquivo jsband
 
-No seu editor de texto favorito crie um arquivo javascript chamado "myapi.js", dentro dele vamos rodar um comendo básico de console, só para podermos visualizar o seu funcionamento. Insira dentro desse arquivo os seguintes comandos:
+No seu editor de texto favorito crie um arquivo javascript chamado "my-api.js", dentro dele vamos rodar um comando básico de console, só para podermos visualizar o seu funcionamento. Insira dentro desse arquivo os seguintes comandos:
 
 ```text
 console.log("Olá mundo!");
@@ -29,7 +29,7 @@ console.log("Olá mundo!");
 Salve esse arquivo dentro do diretório que criamos na área de trabalho, vá até o terminal e execute o seguinte comando:
 
 ```text
-node myapi.js
+node my-api.js
 ```
 
 Feito isso, dentro do terminal onde você executou o comando deverá aparecer o que escrevemos dentro do nosso comando de console. O nosso queridíssimo "Olá mundo!". 
@@ -81,7 +81,7 @@ console.log("servidor ta rodando");
 ```
 
 {% hint style="info" %}
-Uma coisa importante, toda a vez que o arquivo for modificado, vocês deverá reiniciar o servidor, então salve suas alterações e rode novamente node jsband.js no seu terminal
+Uma coisa importante, toda a vez que o arquivo for modificado, vocês deverá reiniciar o servidor, então salve suas alterações e rode novamente node my-api.js no seu terminal
 {% endhint %}
 
 Agora vamos ao teste, abra novamente o servidor local na porta 3000
