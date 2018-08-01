@@ -2,22 +2,22 @@
 
 ## Melhorando o funcionamento do nosso servidor
 
-Você já deve ter percebido que sempre que fizermos uma alteração na nossa aplicação, teremos que reiniciar nosso servidor para subir as atualizações. 
+Você já deve ter percebido que sempre que fizermos uma alteração na nossa aplicação teremos que reiniciar o servidor para subir as atualizações.
 
-Ok, conseguir subir um servidor no primeiro momento parece muito legal, mas acredite depois de horas de programação, ter que subir o servidor a cada alteração pode ser tudo o que vocês não vai querer fazer enquanto estiver trabalhando. Mas sem desespero, porque para solucionar esse problema podemos utiliza o nodemon.
+Ok, subir um servidor com sucesso no primeiro momento parece muito legal, mas depois de horas de programação ter que obrigatoriamente subir o servidor a cada alteração pode ser tudo o que você não vai querer fazer enquanto estiver trabalhando. Mas sem desespero, pois para solucionar esse problema podemos utilizar o [Nodemon.](https://nodemon.io/)
 
-Ele permite que a gente rode um script em node e que ele fique monitorando os arquivos. Caso você altere, ele restarta automaticamente o servidor. Para instalar o nodemon, vamos utilizar o "gerenciador" de dependências npm 
+Ele permite que a gente rode um script em Node.js que fica monitorando os arquivos. Caso você faça uma alteração, o Nodemon reinicia automaticamente o servidor. Para instalá-lo, vamos utilizar o "gerenciador" de dependências NPM \(NPM é o um gerenciador de pacotes que usamos em nossas aplicações para baixar módulos ou ferramentas na nossa API\).
 
 ```
 $ npm install -g nodemon
 ```
 
-Pronto! Agora você pode alterar seus arquivos que o nodemon vai restartar o nosso servidor.
+Pronto! Agora você pode alterar seus arquivos que o Nodemon vai reiniciar nosso servidor automaticamente.
 
-Para usarmos o nodemon para subir o nosso servidor, basta no terminal digitarmos o comando:
+Para usarmos o Nodemon para subir o servidor, basta digitar no terminal o comando:
 
 ```text
-nodemon my-api
+$ nodemon my-api
 ```
 
 ![](.gitbook/assets/image.png)
