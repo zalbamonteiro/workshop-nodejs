@@ -1,18 +1,18 @@
 # Criando um servidor web
 
-## E porque não começar com o "Olá mundo"?
+## **E por quê não começar com "Olá mundo"?**
 
-Para darmos inicio ao nosso projeto precisamos criar um diretório onde colocaremos os arquivos da nossa aplicação. Para isso crie uma pasta na sua área de trabalho com o nome my-api. Isso mesmo! Vamos montar uma api nesse workshop, e tudo isso usando nodejs e javascript.
+Para darmos início ao nosso projeto precisamos criar um diretório onde colocaremos os arquivos da nossa aplicação. Para isso, crie uma pasta na sua área de trabalho com o nome **my-api**. Isso mesmo! Vamos montar uma API neste workshop usando Node.js e JavaScript.
 
 ### Crie o diretório do projeto
 
-A sua área de trabalho cria a pasta jsband
+Na área de trabalho, crie a pasta **my-api**.
 
 ```
 $ mkdir my-api
 ```
 
-Depois de criada, entre no diretório jsband.
+Depois de criada, entre no diretório **my-api**.
 
 ```text
 $ cd my-api/
@@ -20,71 +20,64 @@ $ cd my-api/
 
 ### Criando o arquivo my-api
 
-No seu editor de texto favorito crie um arquivo javascript chamado "my-api.js", dentro dele vamos rodar um comando básico de console, só para podermos visualizar o seu funcionamento. Insira dentro desse arquivo os seguintes comandos:
+No seu editor de texto favorito crie um arquivo JavaScript chamado "my-api.js". Dentro deste arquivo vamos rodar um comando básico de console para visualizarmos o funcionamento. Insira o seguinte comando:
 
-```text
+```
 console.log("Olá mundo!");
 ```
 
-Salve esse arquivo dentro do diretório que criamos na área de trabalho, vá até o terminal e execute o seguinte comando:
+Salve o arquivo dentro do diretório que criamos na área de trabalho, vá até o terminal e execute o seguinte comando:
 
 ```text
 node my-api.js
 ```
 
-Feito isso, dentro do terminal onde você executou o comando deverá aparecer o que escrevemos dentro do nosso comando de console. O nosso queridíssimo "Olá mundo!". 
+Feito isso, dentro do terminal onde você executou o comando deverá aparecer o que escrevemos dentro do nosso comando de console: o nosso queridíssimo "Olá mundo!".
 
-Estamos indo muito bem, em breve nosso projeto começará a tomar forma. \o/
+Basicamente o que ocorreu nessa primeira etapa foi executar o JavaScript através do Node.js.
 
-{% hint style="info" %}
-Basicamente o que ocorreu nessa primeira etapa é acabamos de fazer a execução do nosso javascript pelo nodejs.
-{% endhint %}
+### Olha o servidor aí geeeeeeente!
 
-### Olha o servidor aí genteeeeee!!
+Estamos avançando muito bem, mas para montarmos nossa API precisaremos muito de um servidor. Então vamos criá-lo para podermos trabalhar.
 
-Estamos avançando muito bem, mas para montarmos nossa banda, iremos precisar muitooooo e um servidor. Então vamos cria ele para podermos trabalhar.
+Para agilizar o passo a passo, veja os comentários especificando as linhas de código, assim você poderá entender o que os comandos significam.
 
-{% hint style="info" %}
-Para agilizar o nosso passo a passo,  vamos ver comentários especificando algumas linhas de código, assim vocês poderá entender os que os comandos significam.
-{% endhint %}
-
-No arquivo jsband, substitua o nosso "Olá mundo" pelo código abaixo. 
+No arquivo **my-api**, substitua o "Olá mundo" pelo código abaixo.
 
 ```text
-var http = require('http');         // http é uma biblioteca disponível no nodejs
-var server = http.createServer();   // estamos criando um servidor
-server.listen(3000);                // a porta do nosso servidor local rodaremos a aplicação
-console.log("servidor ta rodando")  // sinalizamos que o servidor esta rodando
+var http = require('http');           // http é uma biblioteca disponível no Node.js
+var server = http.createServer();     // estamos criando um servidor
+server.listen(3000);                  // a porta do nosso servidor local onde a aplicação será rodada
+console.log("servidor está rodando")  // sinalizamos que o servidor está rodando
+
 ```
 
 Abra em seu navegador o servidor local na porta 3000:
 
-```text
+### Opa, mas não carregou nada no meu localhost:3000 :\(
 
-```
+Se você tentar abrir o seu servidor local na porta 3000 \(conforme indicamos no nosso código\), não conseguirá visualizar nenhuma página. Mas tudo bem, iremos resolver isso agora!
 
-### Opah, mas no carregou nada no meu localhost:3000 :\(
+Não conseguimos visualizar nada acessando o endereço porque quando usamos o método createServer\(\) precisamos passar dentro dos parênteses uma função anônima com dois parâmetros: um de requisição e outro de resposta. Dentro dessa função anônima diremos à aplicação como queremos apresentar a nossa resposta.
 
-Se vocês tentar abrir em seu navegador o seu servidor local na porta 3000, conforme indicamos no nosso código, não vai conseguir visualizar nenhuma página, mas tudo bem agora nós vamos resolver isso.
-
-Nós não conseguimos visualizar nada acessando o endereço, porque quando usamos o método createServer\(\) uma função anônima que recebe dois parâmetros, um de requisição e um de resposta.
-
-```text
+```javascript
 var http = require('http');
-var server = http.createServer(function(req,res){
-    // req é o parâmetro de requisição e res o de resposta, res.end informa onde a resposta 
-    // deve ser exibida, nesse caso estamos mandando a resposta do servidor para tags html
-    res.end("<html><body><h1>Olá mundo!</h1></body></html>"); 
-});
-server.listen(3000);
-console.log("servidor ta rodando");
 ```
 
-{% hint style="info" %}
-Uma coisa importante, toda a vez que o arquivo for modificado, vocês deverá reiniciar o servidor, então salve suas alterações e rode novamente node my-api.js no seu terminal
-{% endhint %}
+```javascript
+var server = http.createServer(function(req,res){   
+    // req e res são os parâmetros de requisição e resposta, respectivamente   
+    res.end("<html><body><h1>Olá mundo!</h1></body></html>"); 
+    // res.end informa onde a resposta deve ser exibida, nesse caso 
+    // estamos mandando a resposta do servidor para tags html
+    });
+    server.listen(3000);
+    console.log("servidor ta rodando");
+```
 
-Agora vamos ao teste, abra novamente o servidor local na porta 3000
+Uma coisa importante: toda vez que o arquivo for modificado é necessário reiniciar o servidor, então salve as alterações e rode novamente node **my-api.js** no seu terminal.
 
-Tcharaaaaammm... Temos nosso servidor e um "Olá mundo" em grande estilo!! \o/\o/
+Agora vamos ao teste. Abra novamente o servidor local na porta 3000.
+
+Tcharaaaaammm... Temos nosso servidor e um "Olá mundo" em grande estilo!
 
