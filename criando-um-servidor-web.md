@@ -22,7 +22,7 @@ $ cd my-api/
 
 No seu editor de texto favorito crie um arquivo JavaScript chamado "my-api.js". Dentro deste arquivo vamos rodar um comando básico de console para visualizarmos o funcionamento. Insira o seguinte comando:
 
-```
+```javascript
 console.log("Olá mundo!");
 ```
 
@@ -44,7 +44,7 @@ Para agilizar o passo a passo, veja os comentários especificando as linhas de c
 
 No arquivo **my-api**, substitua o "Olá mundo" pelo código abaixo.
 
-```text
+```javascript
 var http = require('http');           // http é uma biblioteca disponível no Node.js
 var server = http.createServer();     // estamos criando um servidor
 server.listen(3000);                  // a porta do nosso servidor local onde a aplicação será rodada
