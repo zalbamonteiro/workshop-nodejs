@@ -6,6 +6,6 @@
 * [Nodemon](nodemon.md)
 * [Rotas e Express](express-e-vamos-as-rotas.md)
 * [Embedded JavaScript \(EJS\)](embedded-javascript-ejs.md)
-* [Carregando dados do json](carregando-dados-do-json.md)
+* [Carregando dados do JSON](carregando-dados-do-json.md)
 * [Simulando uma inserção de dados](simulando-uma-insercao-de-dados.md)
 
