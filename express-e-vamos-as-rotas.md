@@ -73,7 +73,7 @@ Lembre-se que para instalar o express nos paramos o servidor, rode o nodemon nov
 Agora acesso o endereço do servidor local, mas lembre-se que adicionamos uma rota agora, então nossa url também mudou. Acesse: 
 
 ```text
-http://localhost:3000/my-api
+my-api
 ```
 
 

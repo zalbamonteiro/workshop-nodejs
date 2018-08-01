@@ -60,7 +60,7 @@ console.log("servidor ta rodando")  // sinalizamos que o servidor esta rodando
 Abra em seu navegador o servidor local na porta 3000:
 
 ```text
-http://localhost:3000/
+
 ```
 
 ### Opah, mas no carregou nada no meu localhost:3000 :\(
