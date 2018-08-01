@@ -5,7 +5,7 @@
 * [Criando um servidor web](criando-um-servidor-web.md)
 * [Nodemon](nodemon.md)
 * [Rotas e Express](express-e-vamos-as-rotas.md)
-* [Embedded JavaScript - Ejs](embedded-javascript-ejs.md)
+* [Embedded JavaScript \(EJS\)](embedded-javascript-ejs.md)
 * [Carregando dados do json](carregando-dados-do-json.md)
 * [Simulando uma inserção de dados](simulando-uma-insercao-de-dados.md)
 
