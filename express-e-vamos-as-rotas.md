@@ -32,7 +32,7 @@ Para saber mais acesse o link:[ https://docs.npmjs.com/files/package.json](https
 
 Se quiser um arquivo package.json exatamente igual ao do tutorial, você pode copiar os dados do package.json abaixo e salvar no seu projeto.
 
-```text
+```javascript
 {
   "name": "my-api",
   "version": "1.0.0",
